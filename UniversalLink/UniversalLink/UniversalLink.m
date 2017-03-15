@@ -17,6 +17,16 @@
 
 @implementation UniversalLink
 
++ (UniversalLink *)sharedManager
+{
+    static UniversalLink *sharedManagerInstance = nil;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        sharedManagerInstance = [[self alloc] init];
+    });
+    return sharedManagerInstance;
+}
+
 - (BOOL)universalLinkDispatchCenterWithURL:(NSURL *)url
 {
     if (!url.host) {

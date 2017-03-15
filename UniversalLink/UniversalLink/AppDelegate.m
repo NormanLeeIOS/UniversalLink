@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UniversalLink.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,7 @@
         NSURL *webURL = userActivity.webpageURL;
         if ([webURL.host isEqualToString:@"s.h5.china.com.cn"]) {
             // enter Universal Link
-            
+            return [[UniversalLink sharedManager] universalLinkDispatchCenterWithURL:webURL];
         } else {
             [[UIApplication sharedApplication] openURL:webURL
                                                options:@{}
