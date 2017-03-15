@@ -20,6 +20,22 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler
+{
+    if ([userActivity.activityType isEqualToString:NSUserActivityTypeBrowsingWeb]) {
+        NSURL *webURL = userActivity.webpageURL;
+        if ([webURL.host isEqualToString:@"s.h5.china.com.cn"]) {
+            // enter Universal Link
+            
+        } else {
+            [[UIApplication sharedApplication] openURL:webURL
+                                               options:@{}
+                                     completionHandler:nil];
+        }
+    }
+    return YES;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

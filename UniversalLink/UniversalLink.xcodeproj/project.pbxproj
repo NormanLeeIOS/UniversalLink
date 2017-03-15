@@ -13,6 +13,7 @@
 		A19FC0441E78DDBA00EE25E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19FC0421E78DDBA00EE25E0 /* Main.storyboard */; };
 		A19FC0461E78DDBA00EE25E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19FC0451E78DDBA00EE25E0 /* Assets.xcassets */; };
 		A19FC0491E78DDBA00EE25E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19FC0471E78DDBA00EE25E0 /* LaunchScreen.storyboard */; };
+		A1B3036F1E78E58A001218F2 /* UniversalLink.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3036E1E78E58A001218F2 /* UniversalLink.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		A19FC0481E78DDBA00EE25E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19FC04A1E78DDBA00EE25E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B3036C1E78E2EE001218F2 /* UniversalLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniversalLink.entitlements; sourceTree = "<group>"; };
+		A1B3036D1E78E58A001218F2 /* UniversalLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversalLink.h; sourceTree = "<group>"; };
+		A1B3036E1E78E58A001218F2 /* UniversalLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversalLink.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				A1B3036C1E78E2EE001218F2 /* UniversalLink.entitlements */,
 				A19FC03C1E78DDBA00EE25E0 /* AppDelegate.h */,
 				A19FC03D1E78DDBA00EE25E0 /* AppDelegate.m */,
+				A1B3036D1E78E58A001218F2 /* UniversalLink.h */,
+				A1B3036E1E78E58A001218F2 /* UniversalLink.m */,
 				A19FC03F1E78DDBA00EE25E0 /* ViewController.h */,
 				A19FC0401E78DDBA00EE25E0 /* ViewController.m */,
 				A19FC0421E78DDBA00EE25E0 /* Main.storyboard */,
@@ -159,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19FC0411E78DDBA00EE25E0 /* ViewController.m in Sources */,
+				A1B3036F1E78E58A001218F2 /* UniversalLink.m in Sources */,
 				A19FC03E1E78DDBA00EE25E0 /* AppDelegate.m in Sources */,
 				A19FC03B1E78DDBA00EE25E0 /* main.m in Sources */,
 			);
@@ -281,6 +287,7 @@
 				CODE_SIGN_ENTITLEMENTS = UniversalLink/UniversalLink.entitlements;
 				DEVELOPMENT_TEAM = R4L494APAU;
 				INFOPLIST_FILE = UniversalLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.china.UniversalLinkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +301,7 @@
 				CODE_SIGN_ENTITLEMENTS = UniversalLink/UniversalLink.entitlements;
 				DEVELOPMENT_TEAM = R4L494APAU;
 				INFOPLIST_FILE = UniversalLink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.china.UniversalLinkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
